@@ -10,13 +10,14 @@
         <md-switch slot="right" :value="true" disabled/>
       </md-cell-item>
       <md-cell-item title="余额" addon="可用8000.34" arrow no-border>
-        <div class="holder" slot="left"></div>
+        <div class="holder" slot="children"></div>
       </md-cell-item>
     </md-field>
   </div>
 </template>
 
-<script>import {Field, CellItem, Switch} from 'mand-mobile'
+<script>
+import {Field, CellItem, Switch} from 'mand-mobile'
 
 export default {
   name: 'cell-item-demo',
@@ -36,7 +37,7 @@ export default {
     }
   },
 }
-</script>
+</script>
 
 <style lang="stylus" scoped>
 .holder
